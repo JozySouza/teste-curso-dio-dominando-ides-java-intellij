@@ -2,22 +2,23 @@ package br.com.dio;
 
 import br.com.dio.model.Gato;
 
+import java.util.Scanner;
+
 public class PrimeiroPrograma {
    
-    public static void main(String[] args) {
+    public static void main(String[] args, String nome, Integer numPaginas) {
         Gato gato = new Gato();
         System.out.println(gato);
+        Scanner scan = new Scanner(System.in);
 
-        String nome;
-        int numPaginas;
-        Livro livro1 = new Livro(nome:"o problema dos 3 corpos", numPaginas:300);
+        Livro livro1 = new Livro(nome:"o problema dos 3 corpos", numPaginas: 300);
         System.out.println(livro1);
 
         /*int a = 5;
         int b = 3;
         System.out.println("Hello World! " + (a+b));*/
     }
-    class Livro{
+    public class Livro{
         private String nome;
         private Integer numPaginas;
 
